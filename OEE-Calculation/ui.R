@@ -1,7 +1,6 @@
 library(shiny)
 library(plotly)
 
-# UI tanımlama
 ui <- fluidPage(
   
   titlePanel("OEE Hesaplama Aracı"),
@@ -31,7 +30,7 @@ ui <- fluidPage(
                textOutput("quality")
         ),
         column(8,
-               plotlyOutput("oeeGauge", height = "400px", width = "100%")  # Grafik için genişlik ve yükseklik ayarı
+               plotlyOutput("oeeGauge", height = "400px", width = "100%")
         )
       )
     )
