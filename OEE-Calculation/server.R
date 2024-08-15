@@ -1,7 +1,6 @@
 library(shiny)
 library(plotly)
 
-# Server tanımlama
 server <- function(input, output) {
   
   observeEvent(input$calculate, {
@@ -41,7 +40,7 @@ server <- function(input, output) {
             value = OEE
           )
         )
-      ) %>% layout(margin = list(l = 20, r = 20, b = 20, t = 40))  # Kenar boşluklarını daralttık
+      ) %>% layout(margin = list(l = 20, r = 20, b = 20, t = 40)) 
     })
   })
 }
